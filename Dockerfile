@@ -1,4 +1,6 @@
-FROM ubuntu:xenial-20200114
+ARG UBUNTU_VERSION=16.04
+
+FROM ubuntu:${UBUNTU_VERSION}
 LABEL maintainer="Fernando Espíndola <fer.esp@gmail.com>"
 
 WORKDIR /app
